@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>showBD</title>
+</head>
+
+<body>
+
+                <!-- (List) Human -->
+<div th:if="${humans.isEmpty()} == true"> the database is empty </div>
+
+    <div th:each="human : ${humans}">
+        <div>
+            <div>Id:<b th:text="${humans.getId()}"></b></div>
+            <div>Name:<b th:text="${humans.getName()}"></b></div>
+            <div>Email:<b th:text="${humans.getEmail()}"></b></div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

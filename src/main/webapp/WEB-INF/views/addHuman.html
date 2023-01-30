@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+  <meta charset="ISO-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title> add a human </title>
+</head>
+<body>
+
+  <h3 style="margin-left: 250px; margin-top: 50px; color: burlywood"> add a human </h3><br>
+  <form method="POST" action="form">
+
+  <!--  for в label должен совпадать с id в input-->
+    <label for="name" style="margin-left: 250px; color: red"> Name </label>
+    <input name="name" type="text" id="name" style="margin-left: 104px; color: black"/>
+    <br/>
+
+    <label for="email" style="margin-left: 250px; color: red"> email </label>
+    <input name="email"  type="text" id="email" style="margin-left: 106px; color: black"/>
+    <br/>
+
+    <label for="value" style="margin-left: 250px; color: red"> value </label>
+    <input name="value"  type="text" id="value" style="margin-left: 106px; color: black"/>
+    <br/>
+
+    <input type="submit" value="submit" style="margin-left: 250px; border-radius: 5px; background: lightgreen; color: black; margin-top: 50px"/>
+  </form>
+
+
+  <button><a href="workWithBD"> back </a> </button></br></br></br>
+
+</body>
+</html>
